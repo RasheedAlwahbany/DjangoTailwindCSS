@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static tailwind_tags %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,8 +7,11 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        {% tailwind_css %}
     </head>
     <body>
+        <div class="bg-gradient-to-b from-sky-600 via-cfeBlue-100 to-cfe flex h-screen justify-center items-center text-white">
+            <h1 class="text-4xl font-bold">Hello World</h1>
+        </div>
     </body>
 </html>
